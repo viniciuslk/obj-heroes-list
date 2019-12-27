@@ -4,14 +4,14 @@ import styled from "styled-components";
 import { theme } from "styled-tools";
 import { Container } from "react-grid-system";
 
-import { axiosInstance } from "../../../config/Axios";
-import { useAppContext } from "../../../Context";
+import { axiosInstance } from "config/Axios";
+import { useAppContext } from "Context";
 import ObjBox from "Components/Atoms/Box";
 import ObjSpinner from "Components/Atoms/Spinner";
 import ObjDetailsNameAndAvatar from "./NameAndAvatar";
 import ObjDetailsMedias from "./Medias";
 
-import arrow from "../../../assets/left-arrow.svg";
+import arrow from "assets/left-arrow.svg";
 
 const StdContainer = styled(Container)`
   ${theme("mediaQueries.down.lg")} {

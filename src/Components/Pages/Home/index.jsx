@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
 
-import { axiosInstance } from "../../../config/Axios";
+import { axiosInstance } from "config/Axios";
 
-import { useAppContext } from "../../../Context";
+import { useAppContext } from "Context";
 import ObjHeroesList from "Components/Molecules/HeroesList";
 import ObjPaginate from "Components/Molecules/Paginate";
 import ObjDebounceInput from "Components/Atoms/DebounceInput";

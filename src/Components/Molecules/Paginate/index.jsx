@@ -5,7 +5,7 @@ import styled from "styled-components";
 import { theme } from "styled-tools";
 
 import { ObjArrowLeft, ObjArrowRight } from "./Arrows";
-import { useWindowSize } from "../../../Hooks";
+import { useWindowSize } from "Hooks";
 
 const StdPaginate = styled("div")`
   text-align: center;

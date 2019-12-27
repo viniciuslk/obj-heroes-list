@@ -4,7 +4,7 @@ import LinesEllipsis from "react-lines-ellipsis";
 import { theme } from "styled-tools";
 import { Container, Row, Col } from "react-grid-system";
 
-import { axiosInstance } from "../../../config/Axios";
+import { axiosInstance } from "config/Axios";
 import ObjBox from "Components/Atoms/Box";
 import ObjSpinner from "Components/Atoms/Spinner";
 import ObjAvatar from "Components/Atoms/Avatar";
