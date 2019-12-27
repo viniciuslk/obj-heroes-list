@@ -28,7 +28,7 @@ const Header = styled("div")`
   }
 `;
 
-const ObjHeroesList = ({ source, loading }) => {
+const ObjHeroesList = ({ source, loading, onItemClick }) => {
   return (!source || !source.length) && !loading ? (
     <ObjHeroesListNoData />
   ) : (
@@ -46,7 +46,13 @@ const ObjHeroesList = ({ source, loading }) => {
       {loading ? (
         <ObjHeroesListLoading />
       ) : (
-        source.map(item => <ObjHeroesListItem item={item} key={item.id} />)
+        source.map(item => (
+          <ObjHeroesListItem
+            onItemClick={onItemClick}
+            item={item}
+            key={item.id}
+          />
+        ))
       )}
     </StdContainer>
   );
